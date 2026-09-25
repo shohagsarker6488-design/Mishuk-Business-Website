@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>আমাদের মিশুক ব্যবসা</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        html {
+    scroll-behavior: smooth;
+}
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background-color: #2563eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+     .hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 8%;
+    background-color: #eff6ff;
+}
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+        .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+        .contact-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+     }
+    #contact {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #eff6ff;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 17px;
+    color: #4b5563;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.call-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #16a34a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+#services {
+    text-align: center;
+    padding: 60px 8%;
+    background-color: #f9fafb;
+}
+
+#services h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 1;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    font-size: 21px;
+}
+
+.service-card p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+#gallery {
+    text-align: center;
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+#gallery h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1;
+    max-width: 350px;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.whatsapp-btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+    font-size: 14px;
+}
+#contactForm {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contactForm button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    width: 100%;
+    flex: none;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+        flex: none;
+    }
+     .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-links a {
+    font-size: 15px;
+    padding: 5px;
+}
+#gallery {
+    padding: 40px 20px;
+}
+
+.gallery-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 350px;
+}
+.whatsapp-btn {
+    margin-left: 0;
+}
+#contactForm {
+    width: 100%;
+    max-width: 100%;
+    margin: 25px auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+    font-size: 16px;
+    padding: 12px;
+}
+
+#contactForm button {
+    width: 100%;
+}
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+
+    <div class="logo">
+        আমাদের মিশুক
+    </div>
+
+    <div class="nav-links">
+    <a href="#home">হোম</a>
+    <a href="#services">আমাদের কাজ</a>
+    <a href="#gallery">গ্যালারি</a>
+    <a href="#contact">যোগাযোগ</a>
+</div>
+
+</nav>
+<section class="hero"  id="home">
+
+    <div class="hero-content">
+        <h1>আমাদের মিশুক ব্যবসায় স্বাগতম</h1>
+
+        <p>
+            মানসম্মত ও সুন্দর ডিজাইনের মিশুক অটো তৈরি করা হয়।
+            আপনার প্রয়োজন অনুযায়ী নির্ভরযোগ্য মিশুক অটো পেতে আমাদের সাথে যোগাযোগ করুন।
+        </p>
+
+        <a href="#contact" class="contact-btn" onclick="showMessage()">যোগাযোগ করুন</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/auto.jpg" alt="আমাদের তৈরি মিশুক অটো" width="350" height="350">
+    </div>
+
+</section>
+<section id="services">
+
+    <h2>আমাদের কাজ</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>মিশুক অটো তৈরি</h3>
+            <p>বিভিন্ন ধরনের মিশুক অটো তৈরি করা হয়।</p>
+        </div>
+
+        <div class="service-card">
+            <h3>সুন্দর ডিজাইন</h3>
+            <p>গ্রাহকের প্রয়োজন অনুযায়ী সুন্দর ডিজাইনের কাজ করা হয়।</p>
+        </div>
+
+        <div class="service-card">
+            <h3>মানসম্মত কাজ</h3>
+            <p>ভালো মানের উপকরণ ব্যবহার করে যত্নসহকারে কাজ করা হয়।</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="gallery">
+
+    <h2>আমাদের মিশুক অটো</h2>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+          <img src="images/auto-2.jpg" alt="মিশুক অটো">
+           <h3>মিশুক অটো</h3>
+          <p>সুন্দর ও মানসম্মত ডিজাইনের মিশুক অটো।</p>
+        </div>
+
+        <div class="gallery-item">
+           <img src="images/auto-3.jpg" alt="মিশুক অটো">
+          <h3>সুন্দর ডিজাইন</h3>
+          <p>গ্রাহকের প্রয়োজন অনুযায়ী ডিজাইন করা হয়।</p>
+        </div>
+
+       <div class="gallery-item">
+          <img src="images/auto-4.jpg" alt="মিশুক অটো">
+         <h3>মানসম্মত কাজ</h3>
+         <p>যত্নসহকারে মিশুক অটো তৈরি করা হয়।</p>
+      </div>
+
+    </div>
+
+</section>
+<form id="contactForm">
+    <input type="text" id="name" placeholder="আপনার নাম" required>
+
+    <input type="tel" id="phone" placeholder="আপনার মোবাইল নম্বর" required>
+
+    <textarea id="message" placeholder="আপনি কী ধরনের মিশুক অটো চান?" required></textarea>
+
+    <button type="submit">বার্তা পাঠান</button>
+</form>
+<section id="contact">
+
+    <h2>যোগাযোগ করুন</h2>
+
+    <p>মিশুক অটো সম্পর্কে জানতে আমাদের সাথে যোগাযোগ করুন।</p>
+
+    <p>📞 মোবাইল: 01770-909688</p>
+
+    <p>📍 ঠিকানা: নাকাইহাট,গোবিন্দগন্জ,গাইবান্ধা,</p>
+
+    <a href="tel:01770909688" class="call-btn">📞 এখনই কল করুন</a>
+    <a href="https://wa.me/8801770909688" class="whatsapp-btn">
+    💬 WhatsApp-এ যোগাযোগ করুন
+</a>
+
+</section>
+<footer>
+    <p>© 2026 আমাদের মিশুক ব্যবসা | সর্বস্বত্ব সংরক্ষিত</p>
+</footer>
+<script>
+    function showMessage() {
+        alert("আমাদের সাথে যোগাযোগ করার জন্য ধন্যবাদ!");
+    }
+
+         document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let name = document.getElementById("name").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        if (name.length < 3) {
+            alert("দয়া করে আপনার সঠিক নাম লিখুন।");
+            return;
+        }
+
+        if (phone.length < 11) {
+            alert("দয়া করে সঠিক মোবাইল নম্বর লিখুন।");
+            return;
+        }
+
+        if (message.length < 5) {
+            alert("আপনার প্রয়োজনের বিস্তারিত লিখুন।");
+            return;
+        }
+
+        let whatsappMessage =
+            "নতুন Customer Message%0A%0A" +
+            "নাম: " + encodeURIComponent(name) + "%0A" +
+            "মোবাইল: " + encodeURIComponent(phone) + "%0A" +
+            "প্রয়োজন: " + encodeURIComponent(message);
+
+        let whatsappURL =
+            "https://wa.me/8801770909688?text=" + whatsappMessage;
+
+        window.open(whatsappURL, "_blank");
+    });
+
+
+</script>
+</body>
+</html>
