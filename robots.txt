@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shohagsarker6488-design.github.io/Mishuk-Business-Website/sitemap.xml
